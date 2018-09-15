@@ -1,6 +1,6 @@
 # micro-bugsnag
 
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/919060a3fd4cabdfc3af/maintainability)](https://codeclimate.com/github/pauldariye/micro-bugsnag/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/919060a3fd4cabdfc3af/test_coverage)](https://codeclimate.com/github/pauldariye/micro-bugsnag/test_coverage)[![Build Status](https://travis-ci.org/pauldariye/micro-bugsnag.svg?branch=master)](https://travis-ci.org/pauldariye/micro-bugsnag)[![dependencies Status](https://david-dm.org/pauldariye/micro-bugsnag/status.svg)](https://david-dm.org/pauldariye/micro-bugsnag) [![devDependencies Status](https://david-dm.org/pauldariye/micro-bugsnag/dev-status.svg)](https://david-dm.org/pauldariye/micro-bugsnag?type=dev)![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 Send micro errors to the Bugsnag
 
