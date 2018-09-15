@@ -1,24 +1,24 @@
-# micro-bugsnag
+# micro-notify
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/919060a3fd4cabdfc3af/maintainability)](https://codeclimate.com/github/pauldariye/micro-bugsnag/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/919060a3fd4cabdfc3af/test_coverage)](https://codeclimate.com/github/pauldariye/micro-bugsnag/test_coverage)[![Build Status](https://travis-ci.org/pauldariye/micro-bugsnag.svg?branch=master)](https://travis-ci.org/pauldariye/micro-bugsnag)[![dependencies Status](https://david-dm.org/pauldariye/micro-bugsnag/status.svg)](https://david-dm.org/pauldariye/micro-bugsnag) [![devDependencies Status](https://david-dm.org/pauldariye/micro-bugsnag/dev-status.svg)](https://david-dm.org/pauldariye/micro-bugsnag?type=dev)![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/919060a3fd4cabdfc3af/maintainability)](https://codeclimate.com/github/pauldariye/micro-notify/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/919060a3fd4cabdfc3af/test_coverage)](https://codeclimate.com/github/pauldariye/micro-notify/test_coverage)[![Build Status](https://travis-ci.org/pauldariye/micro-notify.svg?branch=master)](https://travis-ci.org/pauldariye/micro-notify)[![dependencies Status](https://david-dm.org/pauldariye/micro-notify/status.svg)](https://david-dm.org/pauldariye/micro-notify) [![devDependencies Status](https://david-dm.org/pauldariye/micro-notify/dev-status.svg)](https://david-dm.org/pauldariye/micro-notify?type=dev)![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-Send micro errors to the Bugsnag
+A simple [`.notify`](https://github.com/bugsnag/bugsnag-js) wrapper to send micro errors to Bugsnag.
 
 ## Usage
 
 ```bash
-yarn install micro-bugsnag # or npm install micro-bugsnag
+yarn add micro-notify # or npm install micro-notify
 ```
 
 ## Basic Example
 
 ```javascript
 
-const Bugsnag = require('bugsnag')
+const notify = require('micro-notify')
 const key = 'YOUR BUG SNAG API KEY'
 
-module.exports = Notify(key)(async (req, res) => {
-  throw Error('Test micro-bugsnag')
+module.exports = notify(key)(async (req, res) => {
+  throw Error('Test micro-notify')
 })
 
 ```
@@ -28,25 +28,26 @@ module.exports = Notify(key)(async (req, res) => {
 
 ```javascript
 
-const Bugsnag = require('bugsnag')
+const notify = require('micro-notify')
 const key = 'YOUR BUG SNAG API KEY'
 
-module.exports = Notify(key, { autoNotify: true })(async (req, res) => {
-  throw Error('Test micro-bugsnag')
+module.exports = notify(key, { autoNotify: true })(async (req, res) => {
+  throw Error('Test micro-notify')
 })
 
 ```
 
 ## Development
 ```
-git clone git@github.com:pauldariye/micro-bugsnag.git
-cd micro-bugsnag && yarn # or npm install
+git clone git@github.com:pauldariye/micro-notify.git
+cd micro-notify && yarn # or npm install
 yarn test
 ```
 
 ## Acknowledgements
 - [micro-sentry](https://github.com/tanmulabs/micro-sentry)
 - [micro-boom](https://github.com/onbjerg/micro-boom)
+- [npm-module-boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)
 
 ## License
 MIT

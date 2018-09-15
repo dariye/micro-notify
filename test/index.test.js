@@ -8,14 +8,14 @@ const notify = require('../src');
 
 test('throws error if no API key provided', () => {
   expect(() => notify()()).toThrow(
-    'micro-bugsnag must be initialized with a Bugsnag API key.'
+    'micro-notify must be initialized with a Bugsnag API key.'
   );
 });
 
 test('throws error if no function provided', () => {
   const key = 'somekey';
   expect(() => notify(key)()).toThrow(
-    'micro-bugsnag must be passed a function.'
+    'micro-notify must be passed a function.'
   );
 });
 

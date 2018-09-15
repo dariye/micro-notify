@@ -5,12 +5,12 @@ const bugsnag = require('bugsnag');
 module.exports = exports = (key, opts = {}) => fn => {
   if (!key) {
     throw new Error(
-      'micro-bugsnag must be initialized with a Bugsnag API key.'
+      'micro-notify must be initialized with a Bugsnag API key.'
     );
   }
 
   if (!fn || typeof fn !== 'function') {
-    throw new Error('micro-bugsnag must be passed a function.');
+    throw new Error('micro-notify must be passed a function.');
   }
 
   bugsnag.register(key, opts);
@@ -19,6 +19,7 @@ module.exports = exports = (key, opts = {}) => fn => {
     try {
       return await fn(req, res);
     } catch (error) {
+      console.error(error);
       bugsnag.notify(error);
 
       let status = res.statusCode || 500;

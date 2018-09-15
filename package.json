@@ -1,15 +1,20 @@
 {
-  "name": "micro-bugsnag",
+  "name": "micro-notify",
   "version": "1.0.0",
-  "main": "src/index.js",
-  "repository": "git@github.com:pauldariye/micro-bugsnag.git",
+  "description": "A simple wrapper to send micro errors to Bugsnag",
+  "keywords": [
+    "micro",
+    "Bugsnag"
+  ],
+  "main": "lib/index.js",
+  "repository": "git@github.com:pauldariye/micro-notify.git",
   "author": "Paul Dariye <paul.dariye@gmail.com>",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf lib",
     "test": "xo --fix && jest --coverage",
     "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
-    "prepublish": "yarn clean && yarn test && yarn build"
+    "prepare": "yarn clean && yarn test && yarn build"
   },
   "xo": {
     "space": true,
