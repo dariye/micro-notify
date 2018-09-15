@@ -1,7 +1,7 @@
 {
   "name": "micro-bugsnag",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:pauldariye/micro-bugsnag.git",
   "author": "Paul Dariye <paul.dariye@gmail.com>",
   "license": "MIT",
